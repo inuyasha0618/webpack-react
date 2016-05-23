@@ -7,4 +7,29 @@ var Hello = React.createClass({
 	}
 });
 
+var Timer = React.createClass({
+    getInitialState: function() {
+        return {
+            seconds: 0
+        }
+    },
+    tick: function() {
+        this.setState({
+            seconds: this.state.seconds + 1
+        });
+    },
+    componentDidMount: function() {
+        this.timer = window.setInterval(this.tick, 1000);
+    },
+    componentWillUnmount() {
+        window.clearInterval(this.timer);
+    },
+    render: function() {
+        return (
+            <p>正在计时：<span>{this.state.seconds}</span>秒</p>
+        );
+    }
+})
+
 ReactDom.render(<Hello name="werweadsfasd" />, document.querySelector('#box'));
+ReactDom.render(<Timer />, document.querySelector('#timer-container'));
