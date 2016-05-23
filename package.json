@@ -1,0 +1,33 @@
+{
+  "name": "webpack-react",
+  "version": "1.0.0",
+  "description": "my first project on webpack and react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --inline --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inuyasha0618/webpack-react.git"
+  },
+  "author": "suntiecheng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inuyasha0618/webpack-react/issues"
+  },
+  "homepage": "https://github.com/inuyasha0618/webpack-react#readme",
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "css-loader": "^0.23.1",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.5.0"
+  }
+}
