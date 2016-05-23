@@ -7,4 +7,4 @@ var Hello = React.createClass({
 	}
 });
 
-ReactDom.render(<Hello name="tiecheng" />, document.querySelector('#box'));
+ReactDom.render(<Hello name="werweadsfasd" />, document.querySelector('#box'));
